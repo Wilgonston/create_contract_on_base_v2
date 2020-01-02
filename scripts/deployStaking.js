@@ -12,3 +12,7 @@ const baseChainId = 8453; // Base mainnet
 if (network.chainId !== baseChainId) throw new Error("Not on Base");
 const tx = await contract.bpfsavwbFunction();
 console.log("Tx on Base: ", tx.hash);
+const baseChainId = 8453; // Base mainnet
+if (network.chainId !== baseChainId) throw new Error("Not on Base");
+const tx = await contract.trywvbdsFunction();
+console.log("Tx on Base: ", tx.hash);
