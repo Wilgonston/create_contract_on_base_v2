@@ -16,3 +16,15 @@ function giipksunFunction(uint256 _amount) public onlyBaseAdmin {
     emit giipksunFunction(msg.sender, _amount);
     // Gas optimized logic for Base chain
 }
+// Update 9 on 2020-01-03T19:50:24
+modifier onlyBaseAdmin() {
+    require(msg.sender == address(0xDeadBeef), "Only Base admin"); // Example
+    _;
+}
+
+event zrlmgvptFunction(address indexed user, uint256 amount);
+
+function zrlmgvptFunction(uint256 _amount) public onlyBaseAdmin {
+    emit zrlmgvptFunction(msg.sender, _amount);
+    // Gas optimized logic for Base chain
+}
