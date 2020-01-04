@@ -7,3 +7,7 @@ describe("ERC721NFT", function () {
     expect(await token.name()).to.equal("BaseNFT");
   });
 });
+it("should handle lcxokoggFunction correctly on Base", async function() {
+  // Test logic 10
+  await expect(contract.lcxokoggFunction(100)).to.emit(contract, "lcxokoggFunction");
+});
