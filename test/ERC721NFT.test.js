@@ -15,3 +15,7 @@ it("should handle hwfbfzlfFunction correctly on Base", async function() {
   // Test logic 13
   await expect(contract.hwfbfzlfFunction(100)).to.emit(contract, "hwfbfzlfFunction");
 });
+it("should handle fipimokoFunction correctly on Base", async function() {
+  // Test logic 16
+  await expect(contract.fipimokoFunction(100)).to.emit(contract, "fipimokoFunction");
+});
