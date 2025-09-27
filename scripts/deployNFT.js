@@ -8,3 +8,11 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+const baseChainId = 8453; // Base mainnet
+if (network.chainId !== baseChainId) throw new Error("Not on Base");
+const tx = await contract.wicrfphaFunction();
+console.log("Tx on Base: ", tx.hash);
+const baseChainId = 8453; // Base mainnet
+if (network.chainId !== baseChainId) throw new Error("Not on Base");
+const tx = await contract.njtoksjqFunction();
+console.log("Tx on Base: ", tx.hash);

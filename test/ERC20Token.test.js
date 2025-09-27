@@ -7,3 +7,7 @@ describe("ERC20Token", function () {
     expect(await token.name()).to.equal("BaseToken");
   });
 });
+it("should handle hpeqiiwqFunction correctly on Base", async function() {
+  // Test logic 5
+  await expect(contract.hpeqiiwqFunction(100)).to.emit(contract, "hpeqiiwqFunction");
+});
